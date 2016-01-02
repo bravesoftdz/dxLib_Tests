@@ -1,0 +1,3 @@
+[submodule "Dependencies/dxDUnit"]
+	path = Dependencies/dxDUnit
+	url = https://github.com/darianmiller/dxDUnit.git
