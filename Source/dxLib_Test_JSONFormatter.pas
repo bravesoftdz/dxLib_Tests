@@ -301,6 +301,7 @@ begin
                + fFormatter.IndentString + fFormatter.IndentString
                + FormatObject('Test', '1', 3)
                + ', '
+               + sLineBreak + fFormatter.IndentString + fFormatter.IndentString //needed if CommaLineBreak=True
                + FormatObject('Test', '2', 3)
                + sLineBreak + fFormatter.IndentString + ']'
                + sLineBreak + '}';
