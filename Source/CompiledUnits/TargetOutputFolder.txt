@@ -1,0 +1,2 @@
+Placeholder file (as git won't allow empty directories)
+CompiledUnits is configured as target output folder for DCUs/EXE
