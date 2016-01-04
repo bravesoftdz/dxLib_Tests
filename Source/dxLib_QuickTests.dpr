@@ -17,7 +17,8 @@ uses
   dxLib_TestRunner in '..\Dependencies\dxLib\Source\dxLib_TestRunner.pas',
   dxLib_Test_ClassPropertyArray in 'dxLib_Test_ClassPropertyArray.pas',
   dxLib_Test_RTTI_SetDefaults in 'dxLib_Test_RTTI_SetDefaults.pas',
-  dxLib_Test_JSONFormatter in 'dxLib_Test_JSONFormatter.pas';
+  dxLib_Test_JSONFormatter in 'dxLib_Test_JSONFormatter.pas',
+  dxLib_Test_JSON_Utils in 'dxLib_Test_JSON_Utils.pas';
 
 {$R *.RES}
 

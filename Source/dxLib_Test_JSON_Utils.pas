@@ -21,6 +21,8 @@ As of January 2016, latest version available online at:
 unit dxLib_Test_JSON_Utils;
 
 interface
+{$I '..\Dependencies\dxLib\Source\dxLib.inc'}
+
 uses
   TestFramework,
   dxLib_JSONUtils;
@@ -81,14 +83,16 @@ begin
   vFormatted := JSON_String(#7);
   Check(vFormatted = '"\u0007"');
 
-  vFormatted := JSON_String(#127);
+  vFormatted := JSON_String(Char(#127));
   Check(vFormatted = '"' + Char(#127) + '"');
 
-  vFormatted := JSON_String(#128);
+  {$IFNDEF DX_String_Is_UTF16}
+  vFormatted := JSON_String(AnsiChar(Char(#128)));
   Check(vFormatted = '"\u0080"');
 
-  vFormatted := JSON_String(#255);
+  vFormatted := JSON_String(Char(#255));
   Check(vFormatted = '"\u00FF"');
+  {$ENDIF}
 end;
 
 
